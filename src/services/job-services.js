@@ -1,5 +1,5 @@
 import axios from 'axios';
 
-const apiUrl = process.env.REACT_APP_BACKEND_URL
+const apiUrl = "https://job-posting-service-1o5j.onrender.com"
 
 export const postJob = (data, token) => axios.post(`${apiUrl}/jobs`, data, { headers: { Authorization: token } });
